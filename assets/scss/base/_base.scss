@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// Basic styles
+// -----------------------------------------------------------------------------
+
+// example:
+// https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/base/_base.scss
+
+html {
+  height: 100%;
+  width: 100%;
+  background: $body-bg;
+}
+
+body {
+  margin: 0 10% 0 5%;
+  padding: 0;
+}

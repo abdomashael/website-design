@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Starter</title>
+  <meta name="description" content="">
+  <%= require('html-loader!./partials/head.html') %>
+</head>
+<body class="homepage1__body">
+<%= require('html-loader!./partials/browserupgrade.html') %>
+<%= require('html-loader!./partials/header.html') %>
+
+<main class="homepage1__main">
+  <img class="homepage1__main__img"  alt="background" src="/images/homepage1_bg.png">
+  <section class="homepage1__main__section1">
+    <h1>Smart living for young professionals</h1>
+    <p>
+      Live in a beautifully designed studios and small apartments for 30 days or more
+    </p>
+    <section class="homepage1__main__section2">
+      <section>
+        <p>New Cairo</p>
+        <p>20 Places</p>
+      </section>
+      <section>
+        <p>Shiekh Zayed</p>
+        <p>20 Places</p>
+      </section>
+      <section>
+        <p>Gouna</p>
+        <p>20 Places</p>
+      </section>
+      <section>
+        <p>Maadi</p>
+        <p>20 Places</p>
+      </section>
+      <section class="homepage1__main__section2__any--section">
+        <p>Any</p>
+      </section>
+    </section>
+  </section>
+</main>
+</body>
+</html>

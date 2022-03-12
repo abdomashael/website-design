@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// Header of the site/application
+// -----------------------------------------------------------------------------
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1% 10% 0 10%;
+
+  align-items: center;
+
+  &__logo {
+    flex-grow: 9;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+
+  &__nav {
+    flex-grow: 1;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+
+      li {
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: medium;
+
+        select {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          font-size: medium;
+          border-color: transparent;
+          background: $body-bg;
+        }
+      }
+    }
+  }
+}

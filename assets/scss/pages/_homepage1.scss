@@ -1,0 +1,66 @@
+// -----------------------------------------------------------------------------
+// Home page
+// -----------------------------------------------------------------------------
+.homepage1__main {
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 68vw;
+    height: 75vh;
+    mix-blend-mode: luminosity;
+  }
+  &__section1 {
+
+    margin: 0 0 0 10%;
+    position: absolute;
+    top: 25%;
+    width: 85%;
+    h1 {
+      font-family: 'Playfair Display SC', serif;
+      font-size: xxx-large;
+      max-width: 600px;
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      max-width: 350px;
+    }
+  }
+
+  &__section2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: $white;
+    max-width: 45%;
+    margin-top: 3rem;
+    padding: .5rem;
+
+    section {
+      p:first-of-type {
+        font-family: 'Poppins', sans-serif;
+        font-size: large;
+        font-weight: 500;
+        margin-bottom: 0;
+        margin-top: .5rem;
+      }
+
+      p:nth-of-type(2n) {
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+        font-weight: 500;
+        color: $primary;
+        margin-top: .3rem;
+      }
+    }
+
+    &__any--section{
+      padding: 0 1.5rem .5rem 1.5rem;
+      background-color: $primary;
+    }
+
+  }
+}
