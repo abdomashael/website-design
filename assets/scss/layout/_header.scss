@@ -36,12 +36,15 @@
         font-weight: 500;
         font-size: medium;
 
-        select {
-          font-family: 'Poppins', sans-serif;
-          font-weight: 500;
+        button {
+          @include font-poppins-medium;
           font-size: medium;
           border-color: transparent;
           background: transparent;
+          cursor: pointer;
+          span{
+            margin-right: .5rem;
+          }
         }
       }
     }
