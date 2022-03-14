@@ -23,10 +23,10 @@
     }
   }
 
+  //noinspection CssUnknownTarget
   &__bottom {
-    background-image: url("/images/homepage5_bg.png");
-    background-repeat: no-repeat;
-    background-position: right center;
+    background: url("/images/homepage5_bg.png") no-repeat right center;
+
     h1{
       font-family: 'Playfair Display SC', serif;
       font-size: xxx-large;
