@@ -9,10 +9,7 @@ import './scss/main.scss'
 // Web App Manifest
 import './site.webmanifest'
 
-// Tiles for Windows 8.1
 import './browserconfig.xml'
-import './tile.png'
-import './tile-wide.png'
 import './images/homepage1_bg.png'
 import './images/homepage2/rectangle6_1.png'
 import './images/homepage2/rectangle6_2.png'
@@ -23,6 +20,12 @@ import './images/homepage3/p3_img1.png'
 import './images/homepage3/p3_img2.png'
 import './images/homepage3/p3_img3.png'
 
+import './images/homepage4/p4_img1.png'
+import './images/homepage4/p4_img2.png'
+import './images/homepage4/p4_bg1.png'
+import './images/homepage4/p4_bg2.png'
+
+
 // robots.txt
 import './robots.txt'
 
@@ -32,7 +35,7 @@ import './humans.txt'
 import $ from "jquery";
 
 let current = '.homepage1__main'
-let pagesMainClasses = ['.homepage1__main', '.homepage2__main', '.homepage3__main']
+let pagesMainClasses = ['.homepage1__main', '.homepage2__main', '.homepage3__main', '.homepage4__main']
 pagesMainClasses.forEach(function (className) {
   $(className).hide()
 })
