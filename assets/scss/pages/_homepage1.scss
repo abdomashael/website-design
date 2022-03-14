@@ -2,17 +2,20 @@
 // Home page
 // -----------------------------------------------------------------------------
 .homepage1__main {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 100%;
   &__img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 68vw;
+    width: 75vw;
     height: 75vh;
     mix-blend-mode: luminosity;
   }
   &__section1 {
 
-    margin: 0 0 0 10%;
     position: absolute;
     top: 25%;
     width: 85%;

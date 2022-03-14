@@ -103,7 +103,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(woff(2)?|ttf|eot)(\?[a-z0-9=.]+)?$/,
+        test: /\.(woff(2)?|ttf|eot|otf)(\?[a-z0-9=.]+)?$/,
         loader: 'file-loader',
         options: {
           outputPath: 'fonts',
@@ -122,7 +122,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './assets/html/homepage1.html',
+      template: './assets/html/index.html',
       filename: 'index.html',
       minify: false, // Disable minification during production mode
       hash: true,
