@@ -1,0 +1,66 @@
+// -----------------------------------------------------------------------------
+// Home page
+// -----------------------------------------------------------------------------
+
+@mixin side {
+  h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: xx-large;
+  }
+
+  p {
+    @include font-poppins-regular;
+    font-size: large;
+    max-width: 80%;
+  }
+}
+
+.homepage4__main {
+  position: absolute;
+  width: 83%;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__side1 {
+    display: flex;
+    flex-direction: row;
+
+    &__part1 {
+      position: relative;
+      div:last-of-type {
+        position: absolute;
+        top: 40%;
+        left: -12%;
+        z-index: -1;
+      }
+    }
+
+    &__part2 {
+      @include side;
+      margin-left: 2.5rem;
+    }
+  }
+
+  &__side2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    &__part1 {
+      @include side
+
+    }
+
+    &__part2 {
+      position: relative;
+
+      div:last-of-type {
+        position: absolute;
+        right: -8%;
+        bottom: -12%;
+        z-index: -1;
+      }
+    }
+  }
+}
