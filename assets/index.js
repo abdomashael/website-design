@@ -58,9 +58,11 @@ pagesMainClasses.forEach(function (className) {
 $(current).show();
 
 $(".header").click(() => {
-  $(current).addClass('slide-up')
-  pagesMainClasses = pagesMainClasses.slice(1)
-  current = pagesMainClasses[0]
-  $(current).fadeIn("slow")
+  if (pagesMainClasses.length > 1) {
+    $(current).addClass('slide-up')
+    pagesMainClasses = pagesMainClasses.slice(1)
+    current = pagesMainClasses[0]
+    $(current).fadeIn("slow")
+  }
 })
 
