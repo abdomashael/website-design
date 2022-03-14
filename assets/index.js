@@ -41,6 +41,11 @@ import './images/homepage5/remix-icons/line/system/clock.png'
 import './images/homepage5/remix-icons/line/system/recycle.png'
 import './images/homepage5/homepage5_bg.png'
 
+import './images/arrow_down.png'
+import './images/homepage6/remix-icons/fill/logos/facebook.png'
+import './images/homepage6/remix-icons/fill/logos/instagram.png'
+import './images/homepage6/remix-icons/fill/logos/twitter.png'
+
 
 // robots.txt
 import './robots.txt'
@@ -51,7 +56,7 @@ import './humans.txt'
 import $ from "jquery";
 
 let current = '.homepage1__main'
-let pagesMainClasses = ['.homepage1__main', '.homepage2__main', '.homepage3__main', '.homepage4__main', '.homepage5__main']
+let pagesMainClasses = ['.homepage1__main', '.homepage2__main', '.homepage3__main', '.homepage4__main', '.homepage5__main', '.homepage6__main']
 pagesMainClasses.forEach(function (className) {
   $(className).hide()
 })
@@ -63,6 +68,14 @@ $(".header").click(() => {
     pagesMainClasses = pagesMainClasses.slice(1)
     current = pagesMainClasses[0]
     $(current).fadeIn("slow")
+  } else {
+    pagesMainClasses = ['.homepage1__main', '.homepage2__main', '.homepage3__main', '.homepage4__main', '.homepage5__main', '.homepage6__main']
+    pagesMainClasses.forEach(className => {
+      $(className).removeClass('slide-up')
+      $(className).hide()
+    })
+    current = pagesMainClasses[0]
+    $(current).show();
   }
 })
 

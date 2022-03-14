@@ -1,0 +1,125 @@
+// -----------------------------------------------------------------------------
+// Home page
+// -----------------------------------------------------------------------------
+
+
+.homepage6__main {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  &__top {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__left--side {
+      width: 60%;
+      margin-right: 2rem;
+
+      button {
+        @include font-poppins-medium;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        border: solid $primary;
+        border-width: 1px;
+        background-color: transparent;
+        margin: 1rem 0;
+        padding: 1rem .5rem;
+        align-items: center;
+
+      }
+    }
+
+    &__right--side {
+      width: 30%;
+      font-family: 'Playfair Display SC', serif;
+
+      h1:first-of-type {
+        color: $dark_green;
+        font-size: xx-large;
+        margin-bottom: 0;
+        margin-top: 1rem;
+      }
+
+      h1:nth-of-type(2n) {
+        margin-top: 1rem;
+        font-size: xxx-large;
+        width: 30%;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        @include font-poppins-regular;
+        background-color: $primary;
+        color: $white;
+        padding: .75rem;
+        border: transparent;
+      }
+    }
+
+  }
+
+  &__footer {
+    margin-top: 7rem;
+
+    &__body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &--part1 {
+        margin-top: 1rem;
+        width: 30%;
+
+        p {
+          width: 85%;
+          color: $dark_green;
+          font-family: 'Playfair Display SC', serif;
+          font-size: x-large;
+        }
+      }
+
+      &--part2 {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+          font-family: 'Playfair Display SC', serif;
+          color: $dark_green;
+        }
+
+        button {
+          @include font-poppins-medium;
+          border: transparent;
+          background-color: transparent;
+          text-align: left;
+          margin: 1rem 0;
+          padding: 0;
+        }
+
+      }
+    }
+
+    &__tail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 94%;
+      p {
+        @include font-poppins-medium;
+        margin-top: 0;
+      }
+      div img{
+        margin: 0 .2rem;
+      }
+    }
+  }
+}
