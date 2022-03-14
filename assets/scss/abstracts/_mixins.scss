@@ -4,3 +4,23 @@
 
 // example:
 // https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/abstracts/_mixins.scss
+
+@mixin font-poppins {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+@mixin font-poppins-600 {
+  @include font-poppins;
+  font-weight: 600;
+}
+
+@mixin font-poppins-medium {
+  @include font-poppins;
+  font-weight: 500;
+}
+
+@mixin font-poppins-regular {
+  @include font-poppins;
+  font-weight: 400;
+}

@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------------
+// Home page
+// -----------------------------------------------------------------------------
+.homepage2__main {
+  position: absolute;
+  width: 82%;
+  margin-top: 7rem;
+  &__top {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      @include font-poppins-medium;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+
+    &__btn {
+      margin-right: 1rem;
+      padding: .5rem .75rem .5rem .75rem;
+      border: transparent;
+      color: $gray;
+      background-color: $white;
+      @include font-poppins-medium;
+
+      &--active {
+        background-color: $primary;
+        color: $white;
+      }
+
+      &--show-more {
+        @include font-poppins-medium;
+        background-color: transparent;
+        border: transparent;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+
+    &__card {
+      position: relative;
+
+      &__title {
+        position: absolute;
+        right: 5%;
+        background-color: $white;
+        padding: .5rem;
+        @include font-poppins-medium;
+        font-size: small;
+      }
+
+      &__info {
+        margin-top: 1rem;
+
+        &--loc {
+          background-color: $primary;
+          color: $white;
+          padding: .5rem;
+          margin-right: .5rem;
+
+          font-family: 'Lato', sans-serif;
+          font-size: small;
+          img {
+            margin-right: .5rem;
+          }
+
+          span{
+            align-items: center;
+          }
+        }
+        &--size {
+          @include font-poppins-regular;
+          font-size: small;
+          color: $gray;
+        }
+
+        &--subtitle {
+          @include font-poppins-regular;
+          font-size: small;
+          margin-bottom: 0;
+        }
+        &--price {
+          margin-top: .3rem;
+          @include font-poppins-medium;
+          font-size: small;
+          color: $gray;
+          b{
+            color: $black;}
+        }
+      }
+    }
+  }
+}
