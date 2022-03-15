@@ -30,7 +30,7 @@
 
   //noinspection CssUnknownTarget
   &__bottom {
-    background: url("/images/homepage5_bg.png") no-repeat 47vw 3vh;
+    background: url("/images/homepage5_bg.png") no-repeat 48vw 3vh;
 
     @include mobile{
       background: url("/images/homepage5_bg.png") no-repeat bottom right;
@@ -53,7 +53,7 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: .5rem 1rem;
+        padding: .5rem 2rem;
 
         @include mobile{
           flex-direction: column;
