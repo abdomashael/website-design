@@ -17,40 +17,61 @@
     justify-content: start;
     flex-wrap: wrap;
     font-family: 'Playfair Display SC', serif;
-    section{
+
+    section {
       max-width: 23%;
       margin-right: 2rem;
+      @include mobile{
+        max-width: 100%;
+
+      }
     }
   }
 
   //noinspection CssUnknownTarget
   &__bottom {
-    background: url("/images/homepage5_bg.png") no-repeat right center;
+    background: url("/images/homepage5_bg.png") no-repeat 47vw 3vh;
 
-    h1{
+    @include mobile{
+      background: url("/images/homepage5_bg.png") no-repeat bottom right;
+    }
+
+    h1 {
       font-family: 'Playfair Display SC', serif;
       font-size: xxx-large;
     }
+
     &__sheet {
       background-color: $white;
-      max-width: 60%;
+      max-width: 50vw;
       padding: 2rem;
       margin: 4rem 0;
+      @include mobile{
+        padding: 0;
+      }
       &__row {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         width: 100%;
         padding: .5rem 1rem;
-        div{
+
+        @include mobile{
+          flex-direction: column;
+          padding: 0;
+        }
+
+        div {
           display: flex;
           flex-direction: row;
-          flex-wrap: wrap;
           align-items: center;
           max-width: 33%;
           min-width: 33%;
           @include font-poppins-medium;
-          img{
+          @include mobile{
+            max-width: 100%;
+            min-width: 100%;
+          }
+          img {
             margin-right: 1rem;
           }
         }

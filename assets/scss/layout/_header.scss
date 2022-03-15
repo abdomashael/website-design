@@ -29,12 +29,24 @@
       align-items: center;
       justify-content: space-between;
       margin: 0;
+      @include mobile {
+        flex-direction: column;
+        align-items: start;
+        button {
+          padding: 0;
+        }
+      }
 
       li {
         display: block;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+        @include font-poppins-medium;
         font-size: medium;
+        @include tablet {
+          margin: 0 .5rem;
+        }
+        @include mobile {
+          margin: .1rem 0;
+        }
 
         button {
           @include font-poppins-medium;
@@ -42,7 +54,8 @@
           border-color: transparent;
           background: transparent;
           cursor: pointer;
-          span{
+
+          span {
             margin-right: .5rem;
           }
         }

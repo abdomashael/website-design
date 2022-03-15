@@ -18,9 +18,18 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @include mobile {
+      margin-top: 60%;
+    }
+
     &__left--side {
       width: 60%;
       margin-right: 2rem;
+
+      @include mobile {
+        width: 100%;
+        margin-right: 0;
+      }
 
       button {
         @include font-poppins-medium;
@@ -41,6 +50,9 @@
     &__right--side {
       width: 30%;
       font-family: 'Playfair Display SC', serif;
+      @include mobile {
+        width: 100%;
+      }
 
       h1:first-of-type {
         color: $dark_green;
@@ -74,6 +86,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      @include mobile {
+        flex-direction: column;
+      }
 
       &--part1 {
         margin-top: 1rem;
@@ -113,11 +128,17 @@
       flex-direction: row;
       justify-content: space-between;
       width: 94%;
+      @include mobile {
+        width: 100%;
+        flex-direction: column-reverse;
+      }
+
       p {
         @include font-poppins-medium;
         margin-top: 0;
       }
-      div img{
+
+      div img {
         margin: 0 .2rem;
       }
     }

@@ -24,3 +24,20 @@
   @include font-poppins;
   font-weight: 400;
 }
+@mixin screen-4k {
+  @media (min-width: $screen-4k) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content
+  }
+}

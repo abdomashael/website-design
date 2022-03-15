@@ -6,6 +6,7 @@
   top: 0;
   width: 90%;
   height: 100%;
+
   &__img {
     position: absolute;
     right: 0;
@@ -13,12 +14,32 @@
     width: 75vw;
     height: 75vh;
     mix-blend-mode: luminosity;
-  }
-  &__section1 {
+    z-index: -1;
 
-    position: absolute;
-    top: 25%;
-    width: 85%;
+    @include tablet {
+      width: 70vw;
+      height: 70vh;
+    }
+
+
+    @include mobile {
+      width: 80vw;
+      height: 80vh;
+      right: -25%;
+      bottom: -25%;
+    }
+  }
+
+  &__section1 {
+    margin-top: 23%;
+    @include screen-4k {
+      margin-top: 10%;
+
+    }
+    @include mobile {
+      margin-top: 45%;
+    }
+
     h1 {
       font-family: 'Playfair Display SC', serif;
       font-size: xxx-large;
@@ -42,6 +63,17 @@
     margin-top: 3rem;
     padding: .5rem;
 
+    @include tablet {
+      max-width: 80%;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      width: fit-content;
+      justify-content: start;
+      align-items: start;
+    }
+
     section {
       p:first-of-type {
         font-family: 'Poppins', sans-serif;
@@ -60,7 +92,7 @@
       }
     }
 
-    &__any--section{
+    &__any--section {
       padding: 0 1.5rem .5rem 1.5rem;
       background-color: $primary;
     }

@@ -26,14 +26,24 @@
   &__side1 {
     display: flex;
     flex-direction: row;
+    @include tablet {
+      flex-direction: column;
+    }
 
     &__part1 {
       position: relative;
+
       div:last-of-type {
         position: absolute;
         top: 40%;
         left: -12%;
         z-index: -1;
+      }
+
+      @include tablet {
+        div:first-of-type img {
+          width: 80vw;
+        }
       }
     }
 
@@ -47,6 +57,11 @@
     display: flex;
     flex-direction: row;
     margin-top: 5rem;
+
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+
     &__part1 {
       @include side
 
@@ -60,6 +75,23 @@
         right: -8%;
         bottom: -12%;
         z-index: -1;
+      }
+
+      @include tablet {
+        div:first-of-type img {
+          width: 80vw;
+        }
+        div:last-of-type {
+          position: absolute;
+          right: 2%;
+        }
+      }
+
+      @include mobile {
+        div:last-of-type {
+          position: absolute;
+          bottom: -20%;
+        }
       }
     }
   }
